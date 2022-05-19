@@ -14,3 +14,9 @@ nvcr.io/nvidia/tritonserver:22.04-py3 tritonserver --model-repository=/models \
 ```bash
 curl -v http://localhost:8000/v2/health/ready
 ```
+
+### Check Model Config
+
+```bash
+curl localhost:8000/v2/models/<your model name>/config
+```
