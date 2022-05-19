@@ -28,3 +28,8 @@ docker run --gpus all -it  \
 -e DISPLAY=$DISPLAY   nvcr.io/nvidia/tritonserver:22.04-py3-sdk
 ```
  
+### Performance Analyzer
+
+```bash
+perf_analyzer -m yolov4 -i gRPC --percentile=95 --concurrency-range 1:4 -f perf_result.csv
+```
