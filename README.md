@@ -6,3 +6,11 @@ docker run --gpus all --rm --shm-size=1g --ipc=host --ulimit memlock=-1 --ulimit
 nvcr.io/nvidia/tritonserver:22.04-py3 tritonserver --model-repository=/models \
 --strict-model-config=false --grpc-infer-allocation-pool-size=16 --log-verbose 1
 ```
+
+## Client
+
+### Check Triton Server Connection
+
+```bash
+curl -v http://localhost:8000/v2/health/ready
+```
