@@ -27,3 +27,4 @@ docker run --gpus all -it  \
 --privileged --network host -v /dev:/dev --ipc=host --shm-size=1g  -v /tmp/.X11-unix:/tmp/.X11-unix \
 -e DISPLAY=$DISPLAY   nvcr.io/nvidia/tritonserver:22.04-py3-sdk
 ```
+ 
